@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+
+<title>MPATE-GE 2618 Final Project</title>
+
+<link href="mfbasic.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="top"></div>
+<div id="container">
+<div id="content">
+
+<!--Do not edit anything above this-->
+
+<h1>SLICE SAMPLER</h1>
+<h2>Lucas Hanson &amp; Carrie Sutherland</h2>
+
+
+<h3>Final Project Documentation</h3>
+
+<p>Welcome to Slice Sampler! This program allows the user to load in a 
+.wav file and play different segments and change different parameters 
+for each of the waveform slices.
+This program is set up to take the audio file you load in to the program and slice it up into four sections. For each of these sections or "slices," the user can alter the loop length, where to begin the loop length, highpass and lowpass, the volume for each slice, and mute each slice</p>
+
+<h3>To Be Continued...</h3>
+
+<p>The folowing are items yet to be implemented:</p>
+<li>Highpass and Lowpass are functional but cause clicks in waveform. (Only work on Slice B Currently)
+</li><li>Pitch Shifting for each of the loops.
+</li><li>GUI interface to select which area of the sample file you would like to loop.
+</li><li>One Shot option for slices.</li>
+
+<h4>Installation</h4>
+
+<p>To download select this link: <a href="slicesampler.tgz">slicesampler.tgz</a>
+</p><ul>
+    <li>In this tgz file you should see a Makefile, the header file, the slicesampler file, and two tester .wav files
+</li><li>After dowloading the files, move the folder into you home folder.
+</li><li>You can execute this file by opening terminal and navigating to the folder using terminal commands.
+</li><li>Once you have reached this folder type: make
+</li><li>This should compile and write the program. Finally type ./slicesampler test.wav, ./slicesampler test2.wav or add a .wav file of your own!
+</li><li>This should launch the program. 
+</li>
+</ul>
+<h4> User Manual </h4> 
+
+<p> Your Terminal should present you with the following keyboard commands to control SliceSampler./n</p>
+    <ul><li>'SPACEBAR' - Start and stop audio
+        </li><li>'a' - select slice A 
+        <br>'b' - select slice B 
+        <br>'c' - select slice C
+        <br>'d' - select slice D
+        </br>
+    </li><li>'[' - decrease loop length
+    <br>']' - increase loop length
+    </br>
+    </li><li> '-' - nudge start location left
+    <br> '=' - nudge start location right
+    </br>
+    </li><li>'_' - quick nudge start location left
+    <br> '+' - quick nudge start location right
+    </br>
+    </li><li>[e/r] decreases/increases lowpass cutoff freq
+    <br> [u/i] decreases/increases highpass cutoff freq
+    </br>
+    </li><li>'t' increases volume of a slice
+    <br>'y' decreases volume of a slice
+    </br>
+    </li><li>'f' - toggle fullscreen
+    </li><li>'m' - mute on/off for a specific slice
+    </li><li>'q' - quit the program
+    </li><li> The arrow keys allow you to rotate the image in the function as well
+    </li>
+</ul>
+
+<h4> Testing Issues </h4> 
+<p> Lucas and I struggled with our Low-pass and High-pass implementation. We know that our execution for low-pass and high pass still needs work particularly with extending the buffer to include the overlap amount that occurs when you place effects on the signal. Another aspect that might be confusing for the user is that there is no way to know that changes are happening to the signal without hearing them. </p>
+
+<h4>Program Photos</h4>
+<p>Below is a photo of what the executed project looks like and a picture of the instructions that should appear within the Terminal:<br>
+<img src="images/runtime.png" height = "500" width = "750">
+<p\n>
+<img src="images/execution.png" height = "500" width = "750">
+
+
+<!--Don't edit anything below here-->
+</div>
+<div id="footer">MPATE-GE 2618 C Programming for Music Technology Final Project</div>
+
+</div>
+
+
+</body></html>

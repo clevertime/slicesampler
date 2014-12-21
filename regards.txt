@@ -1,0 +1,10 @@
+We definitely did not reach our end goal for our software. However, this is definitely a product I would like to finish at some point down the road. 
+
+Some items we didn't implement that we had intended to were:
+	-Pitch Shifting for slices
+	-GUI for selecting Loops 
+	-Option to use multiple sample files
+
+Despite coming up short I still really enjoyed this project and found it utterly inspiring to work on a problem that was both so involved and complex. 
+
+Thanks for the awesome class Uri!
